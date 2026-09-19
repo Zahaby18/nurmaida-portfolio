@@ -9,6 +9,8 @@
 <meta name="keywords" content="performance marketing, digital marketing, Google Ads, Meta Ads, TikTok Ads, LinkedIn Ads, lead generation, ads specialist, Jakarta">
 <meta name="robots" content="index, follow, max-image-preview:large">
 <link rel="canonical" href="https://nurmaida-portfolio.vercel.app/">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/favicon.svg">
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Nurmaida Sostia Darma — Performance Marketing Specialist">
@@ -129,8 +131,11 @@
   .stat .lbl{margin-top:12px;font-size:.84rem;color:var(--muted);line-height:1.4}
   @media(max-width:760px){.stats{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:none}.stat:nth-child(1),.stat:nth-child(2){border-bottom:1px solid var(--line)}}
 
-  .about-grid p{color:var(--muted);font-size:1.08rem;margin-bottom:18px}
+  .about-head{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:end;margin-top:14px}
+  .about-head h2{margin:0}
+  .about-grid p{color:var(--muted);font-size:1.08rem}
   .about-grid p strong{color:var(--text);font-weight:600}
+  @media(max-width:820px){.about-head{grid-template-columns:1fr;gap:22px;align-items:start}}
   .spec-card{border:1px solid var(--line);border-radius:var(--radius);padding:26px 30px;background:var(--panel);margin-top:32px}
   .spec-card h4{font-family:'JetBrains Mono';font-size:.76rem;font-weight:500;letter-spacing:.08em;color:var(--accent);text-transform:uppercase;margin-bottom:16px}
   .spec-row{display:flex;justify-content:space-between;gap:32px;padding:11px 0;border-bottom:1px solid var(--line);font-size:.92rem}
@@ -260,9 +265,9 @@
 <section id="about">
   <div class="wrap">
     <div class="about-grid reveal">
-      <div>
-        <span class="sec-tag">About</span>
-        <h2 style="margin:14px 0 24px">Result first.<br>Budget, optimized.</h2>
+      <span class="sec-tag">About</span>
+      <div class="about-head">
+        <h2>Result first.<br>Budget, optimized.</h2>
         <p>Performance marketing is not about spending more. It is about <strong>knowing what works, cutting what does not, and scaling what converts</strong>.</p>
       </div>
       <div class="spec-card">
