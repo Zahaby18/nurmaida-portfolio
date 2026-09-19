@@ -195,16 +195,16 @@
   .foot-in a:hover{color:var(--accent)}
 
   /* client logo marquee */
-  .marquee{position:relative;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent);mask-image:linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent)}
-  .marquee-track{display:flex;align-items:center;gap:4.5rem;width:max-content;animation:marquee 46s linear infinite}
-  .marquee:hover .marquee-track{animation-play-state:paused}
-  .marquee-item{display:flex;align-items:center;justify-content:center;flex-shrink:0;height:38px}
-  .marquee-item img{max-height:100%;max-width:170px;width:auto;object-fit:contain;opacity:.5;transition:opacity .25s ease}
-  .marquee-item:hover img{opacity:1}
-  @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-  @media(max-width:991px){.marquee-track{gap:3rem}.marquee-item img{max-width:130px}}
-  @media(max-width:575px){.marquee-track{gap:2.25rem}.marquee-item{height:30px}.marquee-item img{max-width:110px}}
-  @media(prefers-reduced-motion:reduce){.marquee-track{animation:none;flex-wrap:wrap;justify-content:center;width:100%;gap:2.25rem}}
+  .clients-marquee{position:relative;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent);mask-image:linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent)}
+  .clients-marquee-track{display:flex;align-items:center;gap:4.5rem;width:max-content;animation:clients-marquee 46s linear infinite}
+  .clients-marquee:hover .clients-marquee-track{animation-play-state:paused}
+  .clients-marquee-item{display:flex;align-items:center;justify-content:center;flex-shrink:0;height:38px}
+  .clients-marquee-item img{max-height:100%;max-width:170px;width:auto;object-fit:contain;opacity:.5;transition:opacity .25s ease}
+  .clients-marquee-item:hover img{opacity:1}
+  @keyframes clients-marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  @media(max-width:991px){.clients-marquee-track{gap:3rem}.clients-marquee-item img{max-width:130px}}
+  @media(max-width:575px){.clients-marquee-track{gap:2.25rem}.clients-marquee-item{height:30px}.clients-marquee-item img{max-width:110px}}
+  @media(prefers-reduced-motion:reduce){.clients-marquee-track{animation:none;flex-wrap:wrap;justify-content:center;width:100%;gap:2.25rem}}
 
   .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
   .reveal.in{opacity:1;transform:none}
@@ -408,36 +408,36 @@
       <p class="sec-sub">Brands and companies that trusted me with their growth.</p>
     </div>
   </div>
-  <div class="marquee reveal" aria-label="Client logos">
-    <div class="marquee-track">
-      <span class="marquee-item"><img src="assets/clients/caroline.png" alt="Caroline" width="539" height="120"></span>
-      <span class="marquee-item"><img src="assets/clients/sos-alsok.png" alt="SOS Alsok" width="747" height="120"></span>
-      <span class="marquee-item"><img src="assets/clients/revalue-academy.png" alt="Revalue Academy" width="129" height="120"></span>
-      <span class="marquee-item"><img src="assets/clients/fortis-circle.png" alt="Fortis Circle" width="478" height="120"></span>
-      <span class="marquee-item"><img src="assets/clients/jac.png" alt="JAC" width="323" height="120"></span>
-      <span class="marquee-item"><img src="assets/clients/glowdoc.png" alt="Glowdoc" width="477" height="120"></span>
-      <span class="marquee-item"><img src="assets/clients/toffeedev.png" alt="ToffeeDev" width="678" height="120"></span>
-      <span class="marquee-item"><img src="assets/clients/holigo.png" alt="Holigo" width="417" height="120"></span>
-      <span class="marquee-item"><img src="assets/clients/ghd.png" alt="ghd" width="198" height="120"></span>
-      <span class="marquee-item"><img src="assets/clients/k18.png" alt="K18" width="193" height="120"></span>
-      <span class="marquee-item"><img src="assets/clients/ginnva.png" alt="Ginnva" width="724" height="120"></span>
-      <span class="marquee-item"><img src="assets/clients/two-sudirman.png" alt="Two Sudirman" width="107" height="120"></span>
-      <span class="marquee-item"><img src="assets/clients/sirka.png" alt="Sirka Clinic" width="389" height="120"></span>
-      <span class="marquee-item"><img src="assets/clients/yadea.png" alt="Yadea" width="416" height="120"></span>
-      <span class="marquee-item" aria-hidden="true"><img src="assets/clients/caroline.png" alt="Caroline" width="539" height="120"></span>
-      <span class="marquee-item" aria-hidden="true"><img src="assets/clients/sos-alsok.png" alt="SOS Alsok" width="747" height="120"></span>
-      <span class="marquee-item" aria-hidden="true"><img src="assets/clients/revalue-academy.png" alt="Revalue Academy" width="129" height="120"></span>
-      <span class="marquee-item" aria-hidden="true"><img src="assets/clients/fortis-circle.png" alt="Fortis Circle" width="478" height="120"></span>
-      <span class="marquee-item" aria-hidden="true"><img src="assets/clients/jac.png" alt="JAC" width="323" height="120"></span>
-      <span class="marquee-item" aria-hidden="true"><img src="assets/clients/glowdoc.png" alt="Glowdoc" width="477" height="120"></span>
-      <span class="marquee-item" aria-hidden="true"><img src="assets/clients/toffeedev.png" alt="ToffeeDev" width="678" height="120"></span>
-      <span class="marquee-item" aria-hidden="true"><img src="assets/clients/holigo.png" alt="Holigo" width="417" height="120"></span>
-      <span class="marquee-item" aria-hidden="true"><img src="assets/clients/ghd.png" alt="ghd" width="198" height="120"></span>
-      <span class="marquee-item" aria-hidden="true"><img src="assets/clients/k18.png" alt="K18" width="193" height="120"></span>
-      <span class="marquee-item" aria-hidden="true"><img src="assets/clients/ginnva.png" alt="Ginnva" width="724" height="120"></span>
-      <span class="marquee-item" aria-hidden="true"><img src="assets/clients/two-sudirman.png" alt="Two Sudirman" width="107" height="120"></span>
-      <span class="marquee-item" aria-hidden="true"><img src="assets/clients/sirka.png" alt="Sirka Clinic" width="389" height="120"></span>
-      <span class="marquee-item" aria-hidden="true"><img src="assets/clients/yadea.png" alt="Yadea" width="416" height="120"></span>
+  <div class="clients-marquee reveal" aria-label="Client logos">
+    <div class="clients-marquee-track">
+      <span class="clients-marquee-item"><img src="assets/clients/caroline.png" alt="Caroline" width="539" height="120"></span>
+      <span class="clients-marquee-item"><img src="assets/clients/sos-alsok.png" alt="SOS Alsok" width="747" height="120"></span>
+      <span class="clients-marquee-item"><img src="assets/clients/revalue-academy.png" alt="Revalue Academy" width="129" height="120"></span>
+      <span class="clients-marquee-item"><img src="assets/clients/fortis-circle.png" alt="Fortis Circle" width="478" height="120"></span>
+      <span class="clients-marquee-item"><img src="assets/clients/jac.png" alt="JAC" width="323" height="120"></span>
+      <span class="clients-marquee-item"><img src="assets/clients/glowdoc.png" alt="Glowdoc" width="477" height="120"></span>
+      <span class="clients-marquee-item"><img src="assets/clients/toffeedev.png" alt="ToffeeDev" width="678" height="120"></span>
+      <span class="clients-marquee-item"><img src="assets/clients/holigo.png" alt="Holigo" width="417" height="120"></span>
+      <span class="clients-marquee-item"><img src="assets/clients/ghd.png" alt="ghd" width="198" height="120"></span>
+      <span class="clients-marquee-item"><img src="assets/clients/k18.png" alt="K18" width="193" height="120"></span>
+      <span class="clients-marquee-item"><img src="assets/clients/ginnva.png" alt="Ginnva" width="724" height="120"></span>
+      <span class="clients-marquee-item"><img src="assets/clients/two-sudirman.png" alt="Two Sudirman" width="107" height="120"></span>
+      <span class="clients-marquee-item"><img src="assets/clients/sirka.png" alt="Sirka Clinic" width="389" height="120"></span>
+      <span class="clients-marquee-item"><img src="assets/clients/yadea.png" alt="Yadea" width="416" height="120"></span>
+      <span class="clients-marquee-item" aria-hidden="true"><img src="assets/clients/caroline.png" alt="Caroline" width="539" height="120"></span>
+      <span class="clients-marquee-item" aria-hidden="true"><img src="assets/clients/sos-alsok.png" alt="SOS Alsok" width="747" height="120"></span>
+      <span class="clients-marquee-item" aria-hidden="true"><img src="assets/clients/revalue-academy.png" alt="Revalue Academy" width="129" height="120"></span>
+      <span class="clients-marquee-item" aria-hidden="true"><img src="assets/clients/fortis-circle.png" alt="Fortis Circle" width="478" height="120"></span>
+      <span class="clients-marquee-item" aria-hidden="true"><img src="assets/clients/jac.png" alt="JAC" width="323" height="120"></span>
+      <span class="clients-marquee-item" aria-hidden="true"><img src="assets/clients/glowdoc.png" alt="Glowdoc" width="477" height="120"></span>
+      <span class="clients-marquee-item" aria-hidden="true"><img src="assets/clients/toffeedev.png" alt="ToffeeDev" width="678" height="120"></span>
+      <span class="clients-marquee-item" aria-hidden="true"><img src="assets/clients/holigo.png" alt="Holigo" width="417" height="120"></span>
+      <span class="clients-marquee-item" aria-hidden="true"><img src="assets/clients/ghd.png" alt="ghd" width="198" height="120"></span>
+      <span class="clients-marquee-item" aria-hidden="true"><img src="assets/clients/k18.png" alt="K18" width="193" height="120"></span>
+      <span class="clients-marquee-item" aria-hidden="true"><img src="assets/clients/ginnva.png" alt="Ginnva" width="724" height="120"></span>
+      <span class="clients-marquee-item" aria-hidden="true"><img src="assets/clients/two-sudirman.png" alt="Two Sudirman" width="107" height="120"></span>
+      <span class="clients-marquee-item" aria-hidden="true"><img src="assets/clients/sirka.png" alt="Sirka Clinic" width="389" height="120"></span>
+      <span class="clients-marquee-item" aria-hidden="true"><img src="assets/clients/yadea.png" alt="Yadea" width="416" height="120"></span>
     </div>
   </div>
 </section>
