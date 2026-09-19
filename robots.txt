@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nurmaida-portfolio.vercel.app/sitemap.xml
